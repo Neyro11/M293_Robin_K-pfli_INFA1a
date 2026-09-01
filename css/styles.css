@@ -14,8 +14,8 @@ body {
 header {
   background-color: rgb(46, 18, 148);
   color: white;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 45px;
+  padding-top: 45px;
   font-weight: bold;
 }
 /*Header Styles*/
@@ -27,7 +27,9 @@ header a {
   color: white;
   text-decoration: none;
 }
-
+.header-logo {
+  font-size: large;
+}
 .header-links {
   padding: 0;
   margin: 0;
@@ -56,8 +58,8 @@ header a {
 footer {
   background-color: rgb(46, 18, 148);
   color: white;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 45px;
+  padding-top: 45px;
 }
 
 .footer-text {
@@ -69,6 +71,22 @@ footer {
 }
 .footer-text-title {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+.footer-normal-text {
+  font-size: 14px;
+  line-height: 1;
+  color: white;
+  font-weight: 200;
+}
+.footer-normal-zitat {
+  font-size: 14px;
+  line-height: 1;
+  color: white;
+  font-style: italic;
+  font-weight: 200;
 }
 /*Titel*/
 .title {
@@ -83,7 +101,7 @@ footer {
   margin-bottom: 15px;
 }
 .title-img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: inline-block;
 }
@@ -132,6 +150,7 @@ footer {
   border: solid black 1.5px;
   margin-bottom: 12px;
 }
+/*Produkte*/
 .product-grid {
   list-style-type: none;
   display: flex;
@@ -164,18 +183,209 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
   margin-bottom: 15px;
-  font-weight: bold;
-  font-size: large;
+}
+.product-grid-title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-grid-title p {
+  font-size: 18px;
+  font-weight: 700;
 }
 .product-grid-cart {
   width: 30px;
   height: auto;
+  margin: 0;
+}
+.product-grid-price-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .product-grid li select {
   width: 100%;
   padding: 10px;
   background-color: white;
   margin-bottom: 15px;
+}
+.product-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+  margin-top: 20px;
+}
+
+/*Kontakt*/
+.contact {
+  max-width: 1200px;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  margin-bottom: 50px;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Abstand zwischen den Zeilen */
+}
+
+/* Auf Mobile steht alles untereinander */
+form ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px; /* Abstand zwischen Label und Input */
+}
+
+/* Labels & Fragen */
+form ul li label,
+form ul li:has(input[type="radio"]) p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Input & Textarea Styling (Schwarzer Rahmen aus Bild 2) */
+form ul li input[type="text"],
+form ul li input[type="email"],
+form ul li textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Verhindert horizontales Verziehen der Textarea */
+textarea {
+  resize: vertical;
+}
+
+/* --- Radio Button Styling (Mobile & PC) --- */
+form ul li:has(input[type="radio"]) {
+  gap: 12px;
+}
+
+/* Richtet die drei Radio-Optionen nebeneinander aus */
+form ul li:has(input[type="radio"]) label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px; /* Abstand zwischen Kreis und Text */
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Größere Radio-Kreise mit blauer Farbe */
+form ul li input[type="radio"] {
+  transform: scale(1.3);
+  accent-color: #1e1b85;
+}
+
+/* --- Button Styling --- */
+form ul li button {
+  background-color: #1e1b85; /* Dunkelblau aus Bild 2 */
+  color: #ffffff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; /* Auf Mobile nutzt der Button die volle Breite */
+}
+
+@media (min-width: 600px) {
+  .title-img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+  }
+  .content-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .product-grid {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .title-text {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  form ul {
+    gap: 24px;
+  }
+
+  /* Schaltet auf das zweispaltige Grid um */
+  form ul li {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Textarea-Label oben ausrichten statt zentriert */
+  form ul li:has(textarea) {
+    align-items: start;
+  }
+
+  form ul li:has(textarea) label {
+    margin-top: 8px;
+  }
+
+  /* Radio-Zeile für den PC anpassen */
+  form ul li:has(input[type="radio"]) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* Die Frage bekommt auf PC die gleiche feste Breite wie die Labels */
+  form ul li:has(input[type="radio"]) p {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  /* Button-Verhalten auf dem PC */
+  form ul li button {
+    display: flex;
+    justify-content: center;
+    grid-column: 2; /* Zwingt den Button in die rechte Spalte unter die Inputs */
+    width: 100px; /* Button wird nur so breit wie sein Text + Padding */
+    padding: 12px 36px;
+    background-color: rgb(46, 18, 148);
+    color: white;
+    font-size: small;
+  }
+
+  form ul li button:hover {
+    background-color: rgba(46, 18, 148, 0.493);
+    color: rgb(46, 18, 148);
+  }
 }

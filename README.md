@@ -1,30 +1,33 @@
 # M293_Robin_K-pfli_INFA1a
+
 ## KI Nutzung
+
 Ich habe bei dem HTML-code bei dem kontakt.html Ki benutzt um meinen Code zu korrigieren (bei den Eingabefeldern, Optionsfeldern und bei dem Absendeknopf)
 vorheriger Code:
-    <ul>
-          <li>
-              <label for="contact">Dein Name</label>
-              <textarea id="contact" name="name" rows="1" cols="50"></textarea>
-          </li>
-          <li>
-              <label for="contact">E-Mail</label>
-              <textarea id="contact" name="e-mail" rows="1" cols="50"></textarea>
-          </li>
-          <li>
-              <label for="contact">Nachricht</label>
-              <textarea id="contact" name="message" rows="5" cols="50"></textarea>
-          </li>
-          <li>
-            <form>
-              <label>
-                <input type="radio" name="preis" value="fair" checked> super fair
-              </label>
-              
+
+<ul>
+<li>
+<label for="contact">Dein Name</label>
+<textarea id="contact" name="name" rows="1" cols="50"></textarea>
+</li>
+<li>
+<label for="contact">E-Mail</label>
+<textarea id="contact" name="e-mail" rows="1" cols="50"></textarea>
+</li>
+<li>
+<label for="contact">Nachricht</label>
+<textarea id="contact" name="message" rows="5" cols="50"></textarea>
+</li>
+<li>
+<form>
+<label>
+<input type="radio" name="preis" value="fair" checked> super fair
+</label>
+
               <label>
                 <input type="radio" name="preis" value="okay"> okay
               </label>
-              
+
               <label>
                 <input type="radio" name="preis" value="teuer"> teuer
               </label>
@@ -33,8 +36,11 @@ vorheriger Code:
           </li>
            <input type="submit" value="Absenden">
         </ul>
+
 Die Korrektur mithilfe der KI:
-    <form action="#" method="post">
+
+<form action="#" method="post">
+
   <ul>
     <li>
       <label for="form-name">Dein Name</label>
@@ -65,3 +71,5 @@ Die Korrektur mithilfe der KI:
     </li>
   </ul>
 </form>
+
+Ich habe auch KI bei dem Styling von der Kontaktseite benutzt
