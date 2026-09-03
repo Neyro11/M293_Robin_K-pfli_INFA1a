@@ -48,35 +48,60 @@
         <form action="#" method="post">
           <ul>
             <li>
-              <label for="form-name">Dein Name</label>
-              <input type="text" id="form-name" name="name" required />
+              <div>
+                <label for="form-name">Dein Name</label>
+              </div>
+              <div>
+                <input
+                  class="input-text"
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  required
+                />
+              </div>
             </li>
             <li>
               <label for="form-email">E-Mail</label>
-              <input type="email" id="form-email" name="e-mail" required />
-            </li>
-            <li>
-              <label for="form-message">Nachricht</label>
-              <textarea
-                id="form-message"
-                name="message"
-                rows="5"
-                cols="50"
+              <input
+                class="input-text"
+                type="text"
+                id="form-email"
+                name="e-mail"
                 required
-              ></textarea>
+              />
             </li>
             <li>
-              <p>Was denkst du über unsere Preise?</p>
-              <label>
-                <input type="radio" name="preis" value="fair" checked /> super
-                fair
-              </label>
-              <label>
-                <input type="radio" name="preis" value="okay" /> okay
-              </label>
-              <label>
-                <input type="radio" name="preis" value="teuer" /> teuer
-              </label>
+              <div>
+                <label for="form-message">Nachricht</label>
+              </div>
+              <div>
+                <textarea
+                  class="input-text"
+                  id="form-message"
+                  name="message"
+                  rows="5"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>Was denkst du über unsere Preise?</p>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="preis" value="fair" checked /> super
+                  fair
+                </label>
+                <label>
+                  <input type="radio" name="preis" value="okay" /> okay
+                </label>
+                <label>
+                  <input type="radio" name="preis" value="teuer" /> teuer
+                </label>
+              </div>
             </li>
             <li>
               <button type="submit">Absenden</button>

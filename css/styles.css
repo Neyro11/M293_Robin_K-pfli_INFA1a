@@ -240,24 +240,24 @@ form ul {
   gap: 24px;
 }
 
-form ul li {
+form ul li div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-form ul li label,
-form ul li:has(input[type="radio"]) p {
+form ul li div label,
+form ul li div:has(input[type="radio"]) p {
   font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
 
 /* Input & Textarea Styling  */
-form ul li input[type="text"],
-form ul li input[type="email"],
-form ul li textarea {
+form ul li div input[type="text"],
+form ul li div input[type="email"],
+form ul li div textarea {
   width: 100%;
   padding: 12px;
   border: 1.5px solid #000000;
@@ -271,11 +271,11 @@ textarea {
 }
 
 /* --- Radio Button Styling (Mobile & PC) --- */
-form ul li:has(input[type="radio"]) {
+form ul li div:has(input[type="radio"]) {
   gap: 12px;
 }
 
-form ul li:has(input[type="radio"]) label {
+form ul li div:has(input[type="radio"]) label {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -284,7 +284,7 @@ form ul li:has(input[type="radio"]) label {
   white-space: nowrap;
 }
 
-form ul li input[type="radio"] {
+form ul li div input[type="radio"] {
   transform: scale(1.3);
   accent-color: #1e1b85;
 }
@@ -334,31 +334,46 @@ form ul li button {
   }
 
   form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
   }
 
+  form ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
   form ul li {
-    display: grid;
-    grid-template-columns: 160px 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
   }
 
-  form ul li:has(textarea) {
+  .input-text {
     align-items: start;
+    width: 300px;
+    height: auto;
   }
 
-  form ul li:has(textarea) label {
+  form ul li div:has(textarea) label {
     margin-top: 8px;
   }
 
-  form ul li:has(input[type="radio"]) {
+  form ul li div:has(input[type="radio"]) {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 24px;
   }
 
-  form ul li:has(input[type="radio"]) p {
+  form ul li div:has(input[type="radio"]) p {
     width: 160px;
     flex-shrink: 0;
   }
@@ -377,5 +392,12 @@ form ul li button {
   form ul li button:hover {
     background-color: rgba(46, 18, 148, 0.493);
     color: rgb(46, 18, 148);
+  }
+  .contact {
+    max-width: 400px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
