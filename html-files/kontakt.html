@@ -66,7 +66,7 @@
               <label for="form-email">E-Mail</label>
               <input
                 class="input-text"
-                type="text"
+                type="email"
                 id="form-email"
                 name="e-mail"
                 required
@@ -93,8 +93,8 @@
               </div>
               <div>
                 <label>
-                  <input type="radio" name="preis" value="fair" checked /> super
-                  fair
+                  <input type="radio" name="preis" value="super fair" checked />
+                  super fair
                 </label>
                 <label>
                   <input type="radio" name="preis" value="okay" /> okay
@@ -106,9 +106,18 @@
             </li>
             <li>
               <button type="submit" id="contact-button">Absenden</button>
+              <div
+                id="error-message"
+                class="error-box hidden"
+                role="alert"
+              ></div>
             </li>
           </ul>
         </form>
+        <!--Dankesnachricht-->
+        <div id="thank-you-message" class="hidden">
+          <h2>Vielen Dank für deine Nachricht!</h2>
+        </div>
       </article>
     </main>
     <footer>

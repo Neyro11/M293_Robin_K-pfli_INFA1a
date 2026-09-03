@@ -73,3 +73,6 @@ Die Korrektur mithilfe der KI:
 </form>
 
 Ich habe auch KI bei dem Styling von der Kontaktseite benutzt
+
+Bei der Dankes Nachricht und Hinweisbox habe ich auch Hilfe von einer KI gebraucht um herauszufinden wie dies schöner möglich ist ohne Alert zu benutzen.
+Die Ideen kamen mir selber in den Sinn, jedoch wusste ich nicht wie ich diese effizient umsetzen kann.

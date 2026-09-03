@@ -133,6 +133,7 @@ footer {
   color: black;
 }
 .content-img {
+  transition: transform 0.3s ease;
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -141,7 +142,11 @@ footer {
   border: solid black 1.5px;
   margin-bottom: 12px;
 }
+.content-img:hover {
+  transform: scale(1.1);
+}
 .content-img-smartphone {
+  transition: transform 0.3s ease;
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -149,6 +154,9 @@ footer {
   object-position: top;
   border: solid black 1.5px;
   margin-bottom: 12px;
+}
+.content-img-smartphone:hover {
+  transform: scale(1.1);
 }
 /*Produkte*/
 .product-grid {
@@ -178,6 +186,7 @@ footer {
   box-sizing: border-box;
   margin-bottom: 15px;
 }
+
 .product-grid-title {
   display: flex;
   flex-direction: row;
@@ -300,7 +309,33 @@ form ul li button {
   cursor: pointer;
   width: 100%;
 }
+/*  Dankesnachricht bei Kontakt */
+.hidden {
+  display: none !important;
+}
 
+/* Styling für die Dankes-Nachricht */
+#thank-you-message {
+  text-align: center;
+  padding: 30px;
+  background-color: #eaf7ed;
+  border: 1px solid #2e7d32;
+  border-radius: 6px;
+  color: #1b5e20;
+  margin-bottom: 135px;
+  margin-top: 50px;
+}
+/* Styling die Fehlerbox */
+.error-box {
+  background-color: #fde8e8;
+  color: #9b1c1c;
+  border: 1px solid #f8b4b4;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
 @media (min-width: 600px) {
   .title-img {
     width: 50%;
@@ -332,7 +367,18 @@ form ul li button {
     font-size: 32px;
     margin-bottom: 40px;
   }
+  /*Kontakt*/
 
+  /* Hauptcontainer */
+  .contact {
+    max-width: 650px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Formular-Liste */
   form ul {
     list-style: none;
     padding: 0;
@@ -342,62 +388,72 @@ form ul li button {
     gap: 24px;
   }
 
-  form ul li div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-  }
+  /* Zeilen im Formular */
   form ul li {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
     gap: 16px;
   }
 
-  .input-text {
-    align-items: start;
-    width: 300px;
-    height: auto;
+  form ul li > label,
+  form ul li > div:first-child,
+  form ul li div:has(input[type="radio"]) p {
+    width: 180px;
+    flex-shrink: 0;
+    margin: 0;
   }
 
-  form ul li div:has(textarea) label {
-    margin-top: 8px;
+  form ul li > div:last-child {
+    flex-grow: 1;
+  }
+
+  .input-text,
+  textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+
+  textarea.input-text {
+    resize: vertical;
+    min-height: 120px;
   }
 
   form ul li div:has(input[type="radio"]) {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
   }
 
-  form ul li div:has(input[type="radio"]) p {
-    width: 160px;
-    flex-shrink: 0;
-  }
-
-  form ul li button {
+  form ul li label:has(input[type="radio"]) {
     display: flex;
-    justify-content: center;
-    grid-column: 2;
-    width: 100px;
+    align-items: center;
+    gap: 6px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  /* Absenden Button */
+  form ul li button {
+    width: 150px;
+    margin-left: 180px;
     padding: 12px 36px;
     background-color: rgb(46, 18, 148);
     color: white;
-    font-size: small;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
   }
 
   form ul li button:hover {
-    background-color: rgba(46, 18, 148, 0.493);
-    color: rgb(46, 18, 148);
-  }
-  .contact {
-    max-width: 400px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgba(46, 18, 148, 0.8);
+    color: white;
   }
 }
