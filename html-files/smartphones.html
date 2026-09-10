@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/JS/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -48,108 +49,8 @@
         <h1 class="title-text">Smartphones</h1>
       </article>
       <section>
-        <ul class="product-grid">
-          <li>
-            <img
-              class="product-grid-img"
-              src="/Bilder/assets/smartphone.webp"
-              alt="Bild von dem iPhone 5s"
-            />
-            <div class="product-grid-title">
-              <h2>iPhone 5s</h2>
-              <div class="product-grid-price-cart">
-                <p>649 CHF</p>
-                <img
-                  class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
-                  alt="Warenkorb Symbol"
-                />
-              </div>
-            </div>
-
-            <p>
-              <!--Auswahlliste-->
-              <label for="storage"></label>
-              <select name="storage" id="storage">
-                <option value="">Speicherplatz auswählen</option>
-                <option value="128">128 GB</option>
-                <option value="256">256 GB</option>
-                <option value="512">512 GB</option>
-              </select>
-            </p>
-            <p class="product-description">
-              The iPhone 5s is a classic smartphone known for its compact design
-              and advanced features during its release. While it's an older
-              model, it still provides a reliable user experience.
-            </p>
-          </li>
-          <li>
-            <img
-              class="product-grid-img"
-              src="/Bilder/assets/smartphone2.webp"
-              alt="Bild von dem iPhone 6"
-            />
-            <div class="product-grid-title">
-              <h2>iPhone 6</h2>
-              <div class="product-grid-price-cart">
-                <p>768 CHF</p>
-                <img
-                  class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
-                  alt="Warenkorb Symbol"
-                />
-              </div>
-            </div>
-            <p>
-              <!--Auswahlliste-->
-              <label for="storage"></label>
-              <select name="storage" id="storage">
-                <option value="">Speicherplatz auswählen</option>
-                <option value="128">128 GB</option>
-                <option value="256">256 GB</option>
-                <option value="512">512 GB</option>
-              </select>
-            </p>
-            <p class="product-description">
-              The iPhone 6 is a stylish and capable smartphone with a larger
-              display and improved performance. It introduced new features and
-              design elements, making it a popular choice in its time.
-            </p>
-          </li>
-          <li>
-            <img
-              class="product-grid-img"
-              src="/Bilder/assets/smartphone3.webp"
-              alt="Bild von dem iPhone 13 Pro"
-            />
-            <div class="product-grid-title">
-              <h2>iPhone 13 Pro</h2>
-              <div class="product-grid-price-cart">
-                <p>1099 CHF</p>
-                <img
-                  class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
-                  alt="Warenkorb Symbol"
-                />
-              </div>
-            </div>
-            <p>
-              <!--Auswahlliste-->
-              <label for="storage"></label>
-              <select name="storage" id="storage">
-                <option value="">Speicherplatz auswählen</option>
-                <option value="128">128 GB</option>
-                <option value="256">256 GB</option>
-                <option value="512">512 GB</option>
-              </select>
-            </p>
-            <p class="product-description">
-              The iPhone 13 Pro is a cutting edge smartphone with a powerful
-              camera system, high performance chip, and stunning display. It
-              offers advanced features for users who demand top notch
-              technology.
-            </p>
-          </li>
+        <ul class="product-grid" id="smartphone-grid">
+          <!--Hier kommen die Daten per API rein ich habe die Placeholders entfernt sonst schaut es kommisch aus beim Laden-->
         </ul>
       </section>
     </main>

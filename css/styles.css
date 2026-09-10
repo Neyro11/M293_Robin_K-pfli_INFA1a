@@ -168,6 +168,7 @@ footer {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 .product-grid li {
   width: 90%;
