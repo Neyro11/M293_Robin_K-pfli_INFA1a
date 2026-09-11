@@ -53,6 +53,8 @@ form?.addEventListener("submit", function (e) {
 const smartphoneGrid = document.querySelector("#smartphone-grid");
 let smartphoneData;
 
+//Listeninhalt Löschen vor dem Laden der Seiten
+
 const getSmartphoneProducts = async () => {
   const response = await fetch(
     "https://dummyjson.com/products/category/smartphones",
@@ -62,14 +64,19 @@ const getSmartphoneProducts = async () => {
 
   renderSmartphoneProducts();
 };
-const resetUl = () => {
+
+//Listeninhalt Löschen vor dem Laden der Seiten
+
+const resetSmartphoneUl = () => {
   smartphoneGrid.innerHTML = "";
 };
+
+//Alle einzelnen Listeninhalte befüllen und Laden
 
 const renderSmartphoneProducts = async () => {
   if (!smartphoneGrid) return;
 
-  resetUl();
+  resetSmartphoneUl();
 
   for (let i = 0; i < smartphoneData.products.length; i++) {
     let smartphoneCell = document.createElement("li");
@@ -109,8 +116,126 @@ const renderSmartphoneProducts = async () => {
   }
 };
 
+//Tablets
+const tabletsGrid = document.querySelector("#tablets-grid");
+let tabletsData;
+
+//fetch Data
+const getTabletsProducts = async () => {
+  const response = await fetch(
+    "https://dummyjson.com/products/category/tablets",
+  );
+  tabletsData = await response.json();
+  console.log(tabletsData.products);
+
+  renderTabletsProducts();
+};
+
+//Listeninhalt Löschen vor dem Laden der Seiten
+
+const resetTabletsUl = () => {
+  tabletsGrid.innerHTML = "";
+};
+
+//Alle einzelnen Listeninhalte befüllen und Laden
+
+const renderTabletsProducts = async () => {
+  if (!tabletsGrid) return;
+
+  resetTabletsUl();
+
+  for (let i = 0; i < tabletsData.products.length; i++) {
+    let tabletsCell = document.createElement("li");
+    tabletsCell.innerHTML = `          
+ <img
+              class="product-grid-img"
+              src="${tabletsData.products[i].images[0]}"
+              alt="Bild von dem ${tabletsData.products[i].title}"
+            />
+            <div class="product-grid-title">
+              <h2>
+                ${tabletsData.products[i].title}
+              </h2>
+              <div class="product-grid-price-cart">
+                <p>${tabletsData.products[i].price} CHF</p>
+                <img
+                  class="product-grid-cart"
+                  src="/Bilder/assets/cart.png"
+                  alt="Warenkorb Symbol"
+                />
+              </div>
+            </div>
+
+            <p class="product-description">
+              ${tabletsData.products[i].description}
+            </p>
+`;
+    tabletsGrid.appendChild(tabletsCell);
+  }
+};
+
+//Laptops
+const laptopsGrid = document.querySelector("#laptops-grid");
+let laptopsData;
+
+//fetch Data
+const getLaptopsProducts = async () => {
+  const response = await fetch(
+    "https://dummyjson.com/products/category/laptops",
+  );
+  laptopsData = await response.json();
+  console.log(laptopsData.products);
+
+  renderLaptopsProducts();
+};
+
+//Listeninhalt Löschen vor dem Laden der Seiten
+
+const resetLaptopsUl = () => {
+  laptopsGrid.innerHTML = "";
+};
+
+//Alle einzelnen Listeninhalte befüllen und Laden
+
+const renderLaptopsProducts = async () => {
+  if (!laptopsGrid) return;
+
+  resetLaptopsUl();
+
+  for (let i = 0; i < laptopsData.products.length; i++) {
+    let laptopsCell = document.createElement("li");
+    laptopsCell.innerHTML = `          
+ <img
+              class="product-grid-img"
+              src="${laptopsData.products[i].images[0]}"
+              alt="Bild von dem ${laptopsData.products[i].title}"
+            />
+            <div class="product-grid-title">
+              <h2>
+                ${laptopsData.products[i].title}
+              </h2>
+              <div class="product-grid-price-cart">
+                <p>${laptopsData.products[i].price} CHF</p>
+                <img
+                  class="product-grid-cart"
+                  src="/Bilder/assets/cart.png"
+                  alt="Warenkorb Symbol"
+                />
+              </div>
+            </div>
+
+            <p class="product-description">
+              ${laptopsData.products[i].description}
+            </p>
+`;
+    laptopsGrid.appendChild(laptopsCell);
+  }
+};
+
 //fetch all
 
 document.addEventListener("DOMContentLoaded", () => {
   getSmartphoneProducts();
+  getTabletsProducts();
+  getLaptopsProducts();
 });
