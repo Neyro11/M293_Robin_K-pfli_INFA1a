@@ -3,76 +3,15 @@
 ## KI Nutzung
 
 Ich habe bei dem HTML-code bei dem kontakt.html Ki benutzt um meinen Code zu korrigieren (bei den Eingabefeldern, Optionsfeldern und bei dem Absendeknopf)
-vorheriger Code:
-
-<ul>
-<li>
-<label for="contact">Dein Name</label>
-<textarea id="contact" name="name" rows="1" cols="50"></textarea>
-</li>
-<li>
-<label for="contact">E-Mail</label>
-<textarea id="contact" name="e-mail" rows="1" cols="50"></textarea>
-</li>
-<li>
-<label for="contact">Nachricht</label>
-<textarea id="contact" name="message" rows="5" cols="50"></textarea>
-</li>
-<li>
-<form>
-<label>
-<input type="radio" name="preis" value="fair" checked> super fair
-</label>
-
-              <label>
-                <input type="radio" name="preis" value="okay"> okay
-              </label>
-
-              <label>
-                <input type="radio" name="preis" value="teuer"> teuer
-              </label>
-            </form>
-
-          </li>
-           <input type="submit" value="Absenden">
-        </ul>
-
-Die Korrektur mithilfe der KI:
-
-<form action="#" method="post">
-
-  <ul>
-    <li>
-      <label for="form-name">Dein Name</label>
-      <input type="text" id="form-name" name="name" required>
-    </li>
-    <li>
-      <label for="form-email">E-Mail</label>
-      <input type="email" id="form-email" name="e-mail" required>
-    </li>
-    <li>
-      <label for="form-message">Nachricht</label>
-      <textarea id="form-message" name="message" rows="5" cols="50" required></textarea>
-    </li>
-    <li>
-        <p>Wie findest du den Preis?</p>
-        <label>
-          <input type="radio" name="preis" value="fair" checked> super fair
-        </label>
-        <label>
-          <input type="radio" name="preis" value="okay"> okay
-        </label>
-        <label>
-          <input type="radio" name="preis" value="teuer"> teuer
-        </label>
-    </li>
-    <li>
-      <button type="submit">Absenden</button>
-    </li>
-  </ul>
-</form>
 
 Ich habe auch KI bei dem Styling von der Kontaktseite benutzt
 
 Bei der Dankes Nachricht und Hinweisbox habe ich auch Hilfe von einer KI gebraucht um herauszufinden wie dies schöner möglich ist ohne Alert zu benutzen.
 Die Ideen kamen mir selber in den Sinn, jedoch wusste ich nicht wie ich diese effizient umsetzen kann.
+
+## Video
+
+Das Video befinded sich im Ordner.
+WICHTIG: Ich habe in dem Video den JS Code erklärt die Erklärung für die Kontaktseite hat nicht mehr voll in das Video gereicht aus zeitlichen Grüden, deshalb habe ich bei dem Part für die Kontaktseite die Geschwindigkeit erhöt.
+Sie finden das Video unter:
+https://gibz-my.sharepoint.com/:v:/g/personal/rkoepfli_online_gibz_ch/IQAqocTODOj-S7aL2OEA34x-AVc7LCHx3nkceRzisWIX0mA?e=v4c0cX
