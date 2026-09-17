@@ -7,11 +7,12 @@ Ich habe bei dem HTML-code bei dem kontakt.html Ki benutzt um meinen Code zu kor
 Ich habe auch KI bei dem Styling von der Kontaktseite benutzt
 
 Bei der Dankes Nachricht und Hinweisbox habe ich auch Hilfe von einer KI gebraucht um herauszufinden wie dies schöner möglich ist ohne Alert zu benutzen.
+
 Die Ideen kamen mir selber in den Sinn, jedoch wusste ich nicht wie ich diese effizient umsetzen kann.
 
 ## Video
 
 Das Video befinded sich im Ordner.
-WICHTIG: Ich habe in dem Video den JS Code erklärt die Erklärung für die Kontaktseite hat nicht mehr voll in das Video gereicht aus zeitlichen Grüden, deshalb habe ich bei dem Part für die Kontaktseite die Geschwindigkeit erhöt.
+WICHTIG: Ich habe in dem Video den JS Code erklärt die Erklärung für die Kontaktseite hat nicht mehr voll in das Video gepasst aus zeitlichen Gründen, deshalb habe ich bei dem Part für die Kontaktseite die Geschwindigkeit erhöht.
 Sie finden das Video unter:
 https://gibz-my.sharepoint.com/:v:/g/personal/rkoepfli_online_gibz_ch/IQAqocTODOj-S7aL2OEA34x-AVc7LCHx3nkceRzisWIX0mA?e=v4c0cX
