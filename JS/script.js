@@ -92,7 +92,7 @@ const renderSmartphoneProducts = async () => {
                 <p>${smartphoneData.products[i].price} CHF</p>
                 <img
                   class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
+                  src="../Bilder/assets/cart.png"
                   alt="Warenkorb Symbol"
                 />
               </div>
@@ -159,7 +159,7 @@ const renderTabletsProducts = async () => {
                 <p>${tabletsData.products[i].price} CHF</p>
                 <img
                   class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
+                  src="../Bilder/assets/cart.png"
                   alt="Warenkorb Symbol"
                 />
               </div>
@@ -217,7 +217,7 @@ const renderLaptopsProducts = async () => {
                 <p>${laptopsData.products[i].price} CHF</p>
                 <img
                   class="product-grid-cart"
-                  src="/Bilder/assets/cart.png"
+                  src="../Bilder/assets/cart.png"
                   alt="Warenkorb Symbol"
                 />
               </div>
