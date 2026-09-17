@@ -100,8 +100,7 @@ const renderSmartphoneProducts = async () => {
 
             <p>
               <!--Auswahlliste-->
-              <label for="storage"></label>
-              <select name="storage" id="storage">
+              <select name="storage" aria-label="Speicherplatz auswählen" id="storage">
                 <option value="">Speicherplatz auswählen</option>
                 <option value="128">128 GB</option>
                 <option value="256">256 GB</option>
@@ -235,7 +234,7 @@ const renderLaptopsProducts = async () => {
 //fetch all
 
 document.addEventListener("DOMContentLoaded", () => {
-  getSmartphoneProducts();
-  getTabletsProducts();
-  getLaptopsProducts();
+  if (smartphoneGrid) getSmartphoneProducts();
+  if (tabletsGrid) getTabletsProducts();
+  if (laptopsGrid) getLaptopsProducts();
 });

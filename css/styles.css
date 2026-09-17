@@ -142,6 +142,9 @@ footer {
   border: solid black 1.5px;
   margin-bottom: 12px;
 }
+.content-index-links a:hover {
+  text-decoration: underline;
+}
 .content-img:hover {
   transform: scale(1.1);
 }
@@ -264,7 +267,7 @@ form ul li div:has(input[type="radio"]) p {
   margin: 0;
 }
 
-/* Input & Textarea Styling  */
+/* Input und Textarea Styling  */
 form ul li div input[type="text"],
 form ul li div input[type="email"],
 form ul li div textarea {
@@ -301,7 +304,7 @@ form ul li div input[type="radio"] {
 
 /* --- Button Styling --- */
 form ul li button {
-  background-color: #1e1b85; /* Dunkelblau aus Bild 2 */
+  background-color: #1e1b85;
   color: #ffffff;
   border: none;
   padding: 14px 36px;
@@ -337,6 +340,57 @@ form ul li button {
   margin-bottom: 20px;
   font-weight: 500;
 }
+/*SKELETON LOADER ANIMATION*/
+
+.skeleton-img-placeholder,
+.skeleton-title-placeholder,
+.skeleton-text-placeholder {
+  background: #e2e8f0;
+  background-image: linear-gradient(
+    90deg,
+    #e2e8f0 0px,
+    #f1f5f9 50px,
+    #e2e8f0 100px
+  );
+
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
+}
+
+/* Bild-Platzhalter */
+.skeleton-img-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 15px;
+  border: solid transparent 1.5px;
+}
+
+/* Titel-Platzhalter */
+.skeleton-title-placeholder {
+  height: 22px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/* Text-Beschreibung-Platzhalter */
+.skeleton-text-placeholder {
+  height: 14px;
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0 22px 0 #e2e8f0;
+}
+
+/* Schimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 @media (min-width: 600px) {
   .title-img {
     width: 50%;

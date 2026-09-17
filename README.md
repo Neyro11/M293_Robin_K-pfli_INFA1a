@@ -10,9 +10,10 @@ Bei der Dankes Nachricht und Hinweisbox habe ich auch Hilfe von einer KI gebrauc
 
 Die Ideen kamen mir selber in den Sinn, jedoch wusste ich nicht wie ich diese effizient umsetzen kann.
 
+Bei der Umsetzung von der Skeleton Animation habe ich auch KI gebraucht um mir zu erklären was das ist und wie man es einsetzt.
+
 ## Video
 
-Das Video befinded sich im Ordner.
 WICHTIG: Ich habe in dem Video den JS Code erklärt die Erklärung für die Kontaktseite hat nicht mehr voll in das Video gepasst aus zeitlichen Gründen, deshalb habe ich bei dem Part für die Kontaktseite die Geschwindigkeit erhöht.
 Sie finden das Video unter:
 https://gibz-my.sharepoint.com/:v:/g/personal/rkoepfli_online_gibz_ch/IQAqocTODOj-S7aL2OEA34x-AVc7LCHx3nkceRzisWIX0mA?e=v4c0cX
